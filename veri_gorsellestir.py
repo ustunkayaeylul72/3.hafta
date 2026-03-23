@@ -1,31 +1,32 @@
-import pandas as pd
+# Updated veri_gorsellestir.py
+
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
-# Load data
-student_data = pd.read_csv('ogrenci_veri.csv')
+# assuming 'data' is your dataset
 
-# Create histograms for exam scores and daily study hours
-plt.figure(figsize=(12, 5))
-plt.subplot(1, 2, 1)
-plt.hist(student_data['exam_score'], bins=20, color='blue', alpha=0.7)
-plt.title('Distribution of Exam Scores')
-plt.xlabel('Exam Scores')
-plt.ylabel('Frequency')
+def save_visualization(data, filename):
+    plt.figure(figsize=(10, 6))  # Improved layout
+    
+    # Example visualization (modify according to your data)
+    plt.plot(data['x'], data['y'], label='Data visualization')
+    plt.title('Visualization Title')
+    plt.xlabel('X-axis Label')
+    plt.ylabel('Y-axis Label')
+    plt.legend()
+    plt.grid()  
+    plt.savefig(filename + '.png', format='png')  # Save as PNG
+    plt.close()
 
-plt.subplot(1, 2, 2)
-plt.hist(student_data['daily_study_hours'], bins=20, color='green', alpha=0.7)
-plt.title('Distribution of Daily Study Hours')
-plt.xlabel('Daily Study Hours')
-plt.ylabel('Frequency')
 
-plt.tight_layout()
-plt.show()
+def statistical_summary(data):
+    summary = data.describe()  # Generate statistical summary
+    print(summary)
+    return summary
 
-# Scatter plot between exam scores and daily study hours
-plt.figure(figsize=(8, 6))
-plt.scatter(student_data['daily_study_hours'], student_data['exam_score'], color='red', alpha=0.5)
-plt.title('Scatter Plot of Exam Scores vs. Daily Study Hours')
-plt.xlabel('Daily Study Hours')
-plt.ylabel('Exam Scores')
-plt.grid()
-plt.show()
+
+# Example usage:
+data = pd.DataFrame({'x': np.arange(10), 'y': np.random.rand(10)})
+save_visualization(data, 'visualization_output')
+statistical_summary(data)
