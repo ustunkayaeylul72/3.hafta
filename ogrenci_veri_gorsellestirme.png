@@ -13,3 +13,7 @@ plt.ylabel('Y-axis')
 
 # Save the figure
 plt.savefig('ogrenci_veri_gorsellestirme.png')
+
+git add .
+git commit -m "Fix CSV with 500 proper records and add PNG visualization"
+git push origin main
