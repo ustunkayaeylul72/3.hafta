@@ -54,11 +54,4 @@ print(df['Exam Score'].describe())
 print("\n⏱️ Günlük Çalışma Saati İstatistikleri:")
 print(df['Daily Study Hours'].describe())
 print(f"\n🔗 Korelasyon Katsayısı: {correlation:.4f}")
-
-cd 3.hafta
-python veri_gorsellestir.py
 print("="*60)
-
-git add .
-git commit -m "Add proper visualization PNG"
-git push origin main
