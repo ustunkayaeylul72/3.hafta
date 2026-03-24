@@ -1,6 +1,6 @@
 # Öğrenci Veri Analizi Projesi
 
-## 📌 Proje Hakkında
+##  Proje Hakkında
 Bu projede Python kullanılarak 500 öğrenciden oluşan sentetik bir veri seti oluşturulmuştur.  
 Oluşturulan veriler, gerçek hayattaki dağılımları taklit edecek şekilde normal dağılıma uygun olarak üretilmiştir.
 
@@ -8,7 +8,7 @@ Veri seti daha sonra matplotlib kütüphanesi kullanılarak görselleştirilmiş
 
 ---
 
-## 📊 Veri Seti Açıklaması
+##  Veri Seti Açıklaması
 
 Veri seti toplam 500 gözlem ve 3 sütundan oluşmaktadır:
 
@@ -25,20 +25,20 @@ Veri seti toplam 500 gözlem ve 3 sütundan oluşmaktadır:
 
 ---
 
-## 🛠 Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 - Python  
 - pandas  
 - matplotlib  
 
 ---
 
-## 📈 Grafikler
+##  Grafikler
 
 ![Grafikler](tum_grafikler.png)
 
 ---
 
-## 🔍 Analiz ve Yorum
+##  Analiz ve Yorum
 
 - Sınav notları ve çalışma süreleri normal dağılım (çan eğrisi) göstermektedir.  
 - Veriler incelendiğinde, öğrencilerin büyük bir kısmının ortalama değerler etrafında toplandığı görülmektedir.  
