@@ -1,30 +1,52 @@
-# Synthetic Dataset
+# Öğrenci Veri Analizi Projesi
 
-## Overview
-This synthetic dataset is designed for data analysis exercises and presents variables that can be used to model and analyze various phenomena in a simplified way.
+## 📌 Proje Hakkında
+Bu projede Python kullanılarak 500 öğrenciden oluşan sentetik bir veri seti oluşturulmuştur.  
+Oluşturulan veriler, gerçek hayattaki dağılımları taklit edecek şekilde normal dağılıma uygun olarak üretilmiştir.
 
-## Data Description
-The dataset contains the following variables:
+Veri seti daha sonra matplotlib kütüphanesi kullanılarak görselleştirilmiş ve analiz edilmiştir.
 
-1. **Variable Name: Temperature**  
-   **Unit:** °C  
-   **Description:** Represents the ambient temperature in degrees Celsius at the time of data recording.
+---
 
-2. **Variable Name: Humidity**  
-   **Unit:** %  
-   **Description:** Represents the percentage of moisture in the air.
+## 📊 Veri Seti Açıklaması
 
-3. **Variable Name: Pressure**  
-   **Unit:** hPa (hectopascals)  
-   **Description:** Represents the atmospheric pressure recorded in hectopascals.
+Veri seti toplam 500 gözlem ve 3 sütundan oluşmaktadır:
 
-4. **Variable Name: Wind Speed**  
-   **Unit:** m/s (meters per second)  
-   **Description:** Represents the speed of the wind measured in meters per second.
+1. **id**  
+   - 1’den 500’e kadar benzersiz kimlik numarası
 
-5. **Variable Name: Precipitation**  
-   **Unit:** mm (millimeters)  
-   **Description:** Represents the amount of precipitation measured in millimeters.
+2. **sinav_notu**  
+   - 0 ile 100 arasında değerler  
+   - Normal dağılıma uygun (çoğunluk orta seviyede)
 
-## Conclusion
-This dataset allows users to conduct a variety of statistical analyses and machine learning experiments, simulating real-world data behaviors in a controlled environment.
+3. **calisma_suresi**  
+   - Günlük çalışma süresi (saat)  
+   - Normal dağılıma uygun değerler
+
+---
+
+## 🛠 Kullanılan Teknolojiler
+- Python  
+- pandas  
+- matplotlib  
+
+---
+
+## 📈 Grafikler
+
+![Grafikler](tum_grafikler.png)
+
+---
+
+## 🔍 Analiz ve Yorum
+
+- Sınav notları ve çalışma süreleri normal dağılım (çan eğrisi) göstermektedir.  
+- Veriler incelendiğinde, öğrencilerin büyük bir kısmının ortalama değerler etrafında toplandığı görülmektedir.  
+- Çalışma süresi ile sınav notu arasında belirli bir ilişki gözlemlenebilir.  
+
+---
+
+## 🎯 Sonuç
+
+Bu proje, sentetik veri üretimi, veri görselleştirme ve temel veri analizi konularını uygulamalı olarak göstermektedir.  
+Gerçek dünya verilerine benzer yapılar oluşturularak analiz süreçleri simüle edilmiştir.
