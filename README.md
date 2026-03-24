@@ -46,7 +46,7 @@ Veri seti toplam 500 gözlem ve 3 sütundan oluşmaktadır:
 
 ---
 
-## 🎯 Sonuç
+##  Sonuç
 
 Bu proje, sentetik veri üretimi, veri görselleştirme ve temel veri analizi konularını uygulamalı olarak göstermektedir.  
 Gerçek dünya verilerine benzer yapılar oluşturularak analiz süreçleri simüle edilmiştir.
