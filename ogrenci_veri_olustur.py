@@ -1,1 +1,29 @@
-import pandas as pd\nimport numpy as np\n\n# Constants\nnum_students = 500\n\n# Generate student ID list\nstudent_ids = np.arange(1, num_students + 1)\n\n# Generate exam scores (normally distributed between 0 and 100)\nexam_scores = np.clip(np.random.normal(loc=50, scale=15, size=num_students), 0, 100)\n\n# Generate daily study hours (normally distributed between 0 and 10)\ndaily_study_hours = np.clip(np.random.normal(loc=5, scale=2, size=num_students), 0, 10)\n\n# Create DataFrame\ndf = pd.DataFrame({\n    'ID': student_ids,\n    'Exam Score': exam_scores,\n    'Daily Study Hours': daily_study_hours\n})\n\n# Save to CSV\ndf.to_csv('ogrenci_veri.csv', index=False)\n
+import pandas as pd
+import numpy as np
+
+# Seed ayarla (tekrarlanabilir sonuçlar için)
+np.random.seed(42)
+
+# 500 öğrenci verisi oluştur
+n_students = 500
+data = {
+    'ID': range(1, n_students + 1),
+    'Exam Score': np.round(np.random.uniform(60, 100, n_students), 2),
+    'Daily Study Hours': np.round(np.random.uniform(1, 8, n_students), 2)
+}
+
+# DataFrame oluştur
+df = pd.DataFrame(data)
+
+# CSV dosyasına kaydet (temiz format)
+df.to_csv('ogrenci_veri.csv', index=False, encoding='utf-8')
+
+print("✅ CSV dosyası başarıyla oluşturuldu!")
+print(f"\n📊 Dosya Bilgisi:")
+print(f"  - Toplam Kayıt: {len(df)}")
+print(f"  - Sütunlar: {list(df.columns)}")
+print(f"  - Dosya: ogrenci_veri.csv")
+print(f"\n📋 İlk 5 satır:")
+print(df.head())
+print(f"\n📈 İstatistikler:")
+print(df.describe())

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Veri Analizi Projesi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Öğrenci Veri Analizi Projesi</h1>
+        
+        <h2>Proje Hakkında</h2>
+        <p>Bu projede Python kullanılarak 500 öğrenciden oluşan sentetik bir veri seti oluşturulmuştur. Oluşturulan veriler, gerçek hayattaki dağılımları taklit edecek şekilde normal dağılıma uygun olarak üretilmiştir.</p>
+        <p>Veri seti daha sonra matplotlib kütüphanesi kullanılarak görselleştirilmiş ve analiz edilmiştir.</p>
+
+        <h2>Veri Seti Açıklaması</h2>
+        <p>Veri seti toplam 500 gözlem ve 3 sütundan oluşmaktadır:</p>
+        <ul>
+            <li><strong>id:</strong> 1’den 500’e kadar benzersiz kimlik numarası</li>
+            <li><strong>sinav_notu:</strong> 0 ile 100 arasında değerler, normal dağılıma uygun (çoğunluk orta seviyede)</li>
+            <li><strong>calisma_suresi:</strong> Günlük çalışma süresi (saat), normal dağılıma uygun değerler</li>
+        </ul>
+
+        <h2>Kullanılan Teknolojiler</h2>
+        <ul>
+            <li>Python</li>
+            <li>pandas</li>
+            <li>matplotlib</li>
+        </ul>
+
+        <h2>Grafikler</h2>
+        <p>Aşağıdaki grafikler, üretilen sentetik veriler üzerinden elde edilen dağılım, korelasyon ve diğer istatistiksel sonuçları göstermektedir:</p>
+        <img src="tum_grafikler.png" alt="Öğrenci Verileri Grafikleri">
+
+        <h2>Analiz ve Yorum</h2>
+        <ul>
+            <li>Sınav notları ve çalışma süreleri normal dağılım (çan eğrisi) göstermektedir.</li>
+            <li>Veriler incelendiğinde, öğrencilerin büyük bir kısmının ortalama değerler etrafında toplandığı görülmektedir.</li>
+            <li>Çalışma süresi ile sınav notu arasında belirli bir ilişki gözlemlenebilir.</li>
+        </ul>
+
+        <h2>Sonuç</h2>
+        <p>Bu proje, sentetik veri üretimi, veri görselleştirme ve temel veri analizi konularını uygulamalı olarak göstermektedir. Gerçek dünya verilerine benzer yapılar oluşturularak analiz süreçleri simüle edilmiştir.</p>
+    </div>
+    
+    <div class="footer">
+        <p>GitHub Pages üzerinde barındırılmaktadır.</p>
+    </div>
+</body>
+</html>
